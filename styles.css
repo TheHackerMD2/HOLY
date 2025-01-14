@@ -1,0 +1,80 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Button Styles */
+.btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background: #388e3c;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .button-container {
+        gap: 10px;
+    }
+
+    .btn {
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
